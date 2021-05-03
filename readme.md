@@ -4,7 +4,7 @@
 
 This repository is a simple example of the four major components of Android below.
 
-- Activity (update soon...)
-- BroadcastReceiver (update soon...)
-- Service (update soon...)
-- ContentProvider
+- [Activity](https://github.com/YunByungKwan/Android4ComponentsSample/tree/master/ActivitySample)
+- [BroadcastReceiver](https://github.com/YunByungKwan/Android4ComponentsSample/tree/master/BroadcastReceiverSample)
+- [Service](https://github.com/YunByungKwan/Android4ComponentsSample/tree/master/ServiceSample)
+- [ContentProvider](https://github.com/YunByungKwan/Android4ComponentsSample/tree/master/ClientContentProviderSample)
