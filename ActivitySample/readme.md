@@ -4,6 +4,9 @@
 This app has four activities(MainActivity, SecondActivity, ThirdActivity, FourthActivity).<br>
 Let's start with the main activity.
 
+## Preview.
+<img src="https://user-images.githubusercontent.com/51109517/116893661-33c62080-ac6c-11eb-9647-0b570d2bb806.gif" width=200 height=400/>
+
 ## Test.
 I wanted to check the activity backstack through a test.<br>
 So I used the "dumpsys" command.
