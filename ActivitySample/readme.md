@@ -11,4 +11,25 @@ So I used the "dumpsys" command.
 ### Case 1. No option
 
 Scenario: Main -> Second -> Third -> Fourth -> Main<br>
+Result: It can be seen that all activities are stacked.<br>
 ![image](https://user-images.githubusercontent.com/51109517/116888260-332a8b80-ac66-11eb-83ab-99c27f476253.png)
+
+### Case 2. MainActivity: launchMode="standard"
+
+Scenario: Main -> Second -> Third -> Fourth -> Main<br>
+Result: It can be seen that all activities are stacked.<br>
+![image](https://user-images.githubusercontent.com/51109517/116890561-ba78fe80-ac68-11eb-8975-b4c7b943131c.png)
+
+
+### Case 3. MainActivity: launchMode="singleTask"
+
+Scenario: Main -> Second -> Third -> Fourth -> Main<br>
+Result: Only the MainActivity is left...<br>
+![image](https://user-images.githubusercontent.com/51109517/116890346-7ab21700-ac68-11eb-83f9-a44ccf74c384.png)
+
+
+### Case 4. MainActivity: launchMode="singleInstance"
+
+Scenario: Main -> Second -> Third -> Second -> Main<br>
+Result: The MainActivity at the bottom became the root of the new task.<br>
+![image](https://user-images.githubusercontent.com/51109517/116889740-e1830080-ac67-11eb-86d2-b103506ea6c7.png)
