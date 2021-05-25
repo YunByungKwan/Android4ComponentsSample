@@ -23,15 +23,21 @@ Scenario: Main -> Second -> Third -> Fourth -> Main<br>
 Result: It can be seen that all activities are stacked.<br>
 ![image](https://user-images.githubusercontent.com/51109517/116890561-ba78fe80-ac68-11eb-8975-b4c7b943131c.png)
 
+### Case 3. FourthActivity: launchMode="singleTop"
 
-### Case 3. MainActivity: launchMode="singleTask"
+Scenario: Main -> Second -> Third -> Fourth -> Fourth<br>
+Result: There is only one FourthActivity at the top of the stack.<br>
+![image](https://user-images.githubusercontent.com/51109517/119510629-a37f8500-bdac-11eb-9817-603064c1f6af.png)
+
+
+### Case 4. MainActivity: launchMode="singleTask"
 
 Scenario: Main -> Second -> Third -> Fourth -> Main<br>
 Result: Only the MainActivity is left...<br>
 ![image](https://user-images.githubusercontent.com/51109517/116890346-7ab21700-ac68-11eb-83f9-a44ccf74c384.png)
 
 
-### Case 4. MainActivity: launchMode="singleInstance"
+### Case 5. MainActivity: launchMode="singleInstance"
 
 Scenario: Main -> Second -> Third -> Second -> Main<br>
 Result: The MainActivity at the bottom became the root of the new task.<br>
