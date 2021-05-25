@@ -14,6 +14,10 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.goMainButton.setOnClickListener {
+            startActivity(Intent(this, MainActivity::class.java))
+        }
+
         binding.goSecondButton.setOnClickListener {
             startActivity(Intent(this, SecondActivity::class.java))
         }

@@ -25,5 +25,9 @@ class FourthActivity : AppCompatActivity() {
         binding.goThirdButton.setOnClickListener {
             startActivity(Intent(this, ThirdActivity::class.java))
         }
+
+        binding.goFourthButton.setOnClickListener {
+            startActivity(Intent(this, FourthActivity::class.java))
+        }
     }
 }

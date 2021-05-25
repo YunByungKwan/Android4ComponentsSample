@@ -1,5 +1,6 @@
 package org.ybk.broadcastreceiversample
 
+import org.ybk.broadcastreceiversample.MyBroadcastReceiver
 import android.content.BroadcastReceiver
 import android.content.Intent
 import android.content.IntentFilter

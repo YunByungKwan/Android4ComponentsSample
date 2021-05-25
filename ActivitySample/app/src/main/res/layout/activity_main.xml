@@ -8,6 +8,7 @@
         android:background="@color/purple_200">
 
         <TextView
+            android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="MainActivity"
@@ -20,14 +21,23 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/go_second_button"
+            android:id="@+id/go_main_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Go SecondActivity"
+            android:text="Go MainActivity"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/go_second_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go SecondActivity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/go_main_button" />
 
         <Button
             android:id="@+id/go_third_button"

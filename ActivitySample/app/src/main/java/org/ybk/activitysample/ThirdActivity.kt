@@ -22,6 +22,10 @@ class ThirdActivity : AppCompatActivity() {
             startActivity(Intent(this, SecondActivity::class.java))
         }
 
+        binding.goThirdButton.setOnClickListener {
+            startActivity(Intent(this, ThirdActivity::class.java))
+        }
+
         binding.goFourthButton.setOnClickListener {
             startActivity(Intent(this, FourthActivity::class.java))
         }

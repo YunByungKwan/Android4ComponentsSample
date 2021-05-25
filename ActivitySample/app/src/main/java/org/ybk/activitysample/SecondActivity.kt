@@ -18,6 +18,10 @@ class SecondActivity : AppCompatActivity() {
             startActivity(Intent(this, MainActivity::class.java))
         }
 
+        binding.goSecondButton.setOnClickListener {
+            startActivity(Intent(this, SecondActivity::class.java))
+        }
+
         binding.goThirdButton.setOnClickListener {
             startActivity(Intent(this, ThirdActivity::class.java))
         }
